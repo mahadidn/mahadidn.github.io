@@ -2,14 +2,14 @@
 
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'mahadidn', // Your GitHub org/user name. (This is the only required config)
   },
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
    * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
-  base: '/gitprofile/',
+  base: '/',
   projects: {
     github: {
       display: true, // Display GitHub projects?
@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['', ''], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
@@ -52,85 +52,81 @@ const CONFIG = {
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: 'Portfolio of Mahadi Dwi Nugraha',
     description: '',
     imageURL: '',
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'mahadi-dwi-nugraha-b55647250/',
+    twitter: '',
+    mastodon: '',
     facebook: '',
-    instagram: '',
+    instagram: 'mahadi_dn',
     youtube: '', // example: 'pewdiepie'
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
+    medium: '',
+    dev: '',
     stackoverflow: '', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
+    website: '',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'mahadidwinugraha@gmail.com',
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'PHP',
     'Laravel',
     'JavaScript',
-    'React.js',
     'Node.js',
-    'Nest.js',
     'MySQL',
-    'PostgreSQL',
     'Git',
     'Docker',
     'PHPUnit',
     'CSS',
-    'Antd',
-    'Tailwind',
+    'Bootstrap',
   ],
   experiences: [
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
-    },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
-    },
-  ],
-  certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
-  ],
-  educations: [
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
-    },
+    // {
+    //   company: 'Company Name',
+    //   position: 'Position',
+    //   from: 'September 2021',
+    //   to: 'Present',
+    //   companyLink: 'https://example.com',
+    // },
+  //   {
+  //     company: 'Company Name',
+  //     position: 'Position',
+  //     from: 'July 2019',
+  //     to: 'August 2021',
+  //     companyLink: 'https://example.com',
+  //   },
+  // ],
+  // certifications: [
+  //   {
+  //     name: 'Lorem ipsum',
+  //     body: 'Lorem ipsum dolor sit amet',
+  //     year: 'March 2022',
+  //     link: 'https://example.com',
+  //   },
+  // ],
+  // educations: [
+  //   {
+  //     institution: 'Institution Name',
+  //     degree: 'Degree',
+  //     from: '2015',
+  //     to: '2019',
+  //   },
+  //   {
+  //     institution: 'Institution Name',
+  //     degree: 'Degree',
+  //     from: '2012',
+  //     to: '2014',
+  //   },
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
