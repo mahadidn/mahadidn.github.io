@@ -33,21 +33,27 @@ const CONFIG = {
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+          title: 'e-voting',
+          description: 'e-voting website using PHP with MVC.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          link: 'https://github.com/mahadidn/e-voting',
         },
         {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+          title: 'e-learning',
+          description: 'e-learning website using PHP with MVC.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          link: 'https://github.com/mahadidn/e-learning',
         },
+        // {
+        //   title: 'Project Name',
+        //   description:
+        //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+        //   imageUrl:
+        //     'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+        //   link: 'https://example.com',
+        // },
       ],
     },
   },
@@ -75,8 +81,7 @@ const CONFIG = {
     email: 'mahadidwinugraha@gmail.com',
   },
   resume: {
-    fileUrl:
-      '', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'PHP',
@@ -87,6 +92,8 @@ const CONFIG = {
     'Git',
     'Docker',
     'PHPUnit',
+    'HTML',
+    'Linux',
     'CSS',
     'Bootstrap',
   ],
@@ -98,35 +105,59 @@ const CONFIG = {
     //   to: 'Present',
     //   companyLink: 'https://example.com',
     // },
-  //   {
-  //     company: 'Company Name',
-  //     position: 'Position',
-  //     from: 'July 2019',
-  //     to: 'August 2021',
-  //     companyLink: 'https://example.com',
-  //   },
-  // ],
-  // certifications: [
-  //   {
-  //     name: 'Lorem ipsum',
-  //     body: 'Lorem ipsum dolor sit amet',
-  //     year: 'March 2022',
-  //     link: 'https://example.com',
-  //   },
-  // ],
-  // educations: [
-  //   {
-  //     institution: 'Institution Name',
-  //     degree: 'Degree',
-  //     from: '2015',
-  //     to: '2019',
-  //   },
-  //   {
-  //     institution: 'Institution Name',
-  //     degree: 'Degree',
-  //     from: '2012',
-  //     to: '2014',
-  //   },
+    // {
+    //   company: 'Company Name',
+    //   position: 'Position',
+    //   from: 'July 2019',
+    //   to: 'August 2021',
+    //   companyLink: 'https://example.com',
+    // },
+  ],
+  certifications: [
+    {
+      name: 'Red Hat Certified System Administrator (RHCSA)',
+      body: 'Red Hat',
+      year: 'May 2023',
+      link: 'https://www.credly.com/badges/06972855-95a3-4969-861c-b182f34218b6/linked_in_profile',
+    },
+    {
+      name: 'IBM Artificial Intelligence Practitioner Certificate',
+      body: 'IBM',
+      year: 'September 2023',
+      link: 'https://www.credly.com/badges/9b547219-9228-4cdf-86bd-92878ba561f8/linked_in_profile',
+    },
+    {
+      name: 'Python for Data Science',
+      body: 'IBM',
+      year: 'May 2023',
+      link: 'https://www.credly.com/badges/e49f1244-37c4-4233-8f76-810d93edd5fe/linked_in_profile',
+    },
+    {
+      name: 'Enterprise Design Thinking Practitioner',
+      body: 'IBM',
+      year: 'May 2023',
+      link: 'https://www.credly.com/badges/8ebb772c-5966-49c5-89da-ae4ea3bc00bd/linked_in_profile',
+    },
+    {
+      name: 'Enterprise Design Thinking - Team Essentials for AI',
+      body: 'IBM',
+      year: 'June 2023',
+      link: 'https://www.credly.com/badges/78f9bce7-b383-4c30-885f-e9a8db70cd07/linked_in_profile',
+    },
+  ],
+  educations: [
+    // {
+    //   institution: 'Institution Name',
+    //   degree: 'Degree',
+    //   from: '2015',
+    //   to: '2019',
+    // },
+    // {
+    //   institution: 'Institution Name',
+    //   degree: 'Degree',
+    //   from: '2012',
+    //   to: '2014',
+    // },
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
