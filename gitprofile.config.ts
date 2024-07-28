@@ -34,14 +34,14 @@ const CONFIG = {
       projects: [
         {
           title: 'Siaudi AMI',
-          description: 'Audit Mutu Internal WEB using CodeIgniter 4.',
+          description: 'Audit Mutu Internal WEB with CodeIgniter 4.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
           link: 'https://github.com/muhamadnursyami/PROJECT-AMI',
         },
         {
-          title: 'Kominfo Kepri',
-          description: 'REST API Kominfo Kepri',
+          title: 'Diskominfo Kepri',
+          description: 'REST API Kominfo Kepri with Laravel 11',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
           link: 'https://github.com/Diskominfo-Kepri-24/BE-DISKOMINFO',
@@ -86,6 +86,7 @@ const CONFIG = {
   skills: [
     'PHP',
     'Laravel',
+    'CodeIgniter',
     'JavaScript',
     'Node.js',
     'MySQL',
@@ -98,20 +99,20 @@ const CONFIG = {
     'Bootstrap',
   ],
   experiences: [
-    // {
-    //   company: 'Company Name',
-    //   position: 'Position',
-    //   from: 'September 2021',
-    //   to: 'Present',
-    //   companyLink: 'https://example.com',
-    // },
-    // {
-    //   company: 'Company Name',
-    //   position: 'Position',
-    //   from: 'July 2019',
-    //   to: 'August 2021',
-    //   companyLink: 'https://example.com',
-    // },
+    {
+      company: 'LPMPP UMRAH',
+      position: 'Part-time as a programmer',
+      from: '01 May 2024',
+      to: '30 June 2024',
+      companyLink: 'https://example.com',
+    },
+    {
+      company: 'Diskominfo Kepulauan Riau',
+      position: 'Internship as a programmer',
+      from: '01 July 2024',
+      to: '30 August 2024',
+      companyLink: 'https://example.com',
+    },
   ],
   certifications: [
     {
