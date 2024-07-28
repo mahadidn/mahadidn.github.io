@@ -33,18 +33,18 @@ const CONFIG = {
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'e-voting',
-          description: 'e-voting website using PHP with MVC.',
+          title: 'Siaudi AMI',
+          description: 'Audit Mutu Internal WEB using CodeIgniter 4.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://github.com/mahadidn/e-voting',
+          link: 'https://github.com/muhamadnursyami/PROJECT-AMI',
         },
         {
-          title: 'e-learning',
-          description: 'e-learning website using PHP with MVC.',
+          title: 'Kominfo Kepri',
+          description: 'REST API Kominfo Kepri',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://github.com/mahadidn/e-learning',
+          link: 'https://github.com/Diskominfo-Kepri-24/BE-DISKOMINFO',
         },
         // {
         //   title: 'Project Name',
