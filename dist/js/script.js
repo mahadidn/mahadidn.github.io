@@ -7,7 +7,7 @@ const formButton = document.querySelector('#button-form');
 
 formButton.addEventListener('click', (e) => {
     e.preventDefault();
-    alert('Maaf untuk sekarang tidak bisa mengirim pesan');
+    alert("Sorry for not being able to send messages for now :'");
 });
 
 // navbar fixed
