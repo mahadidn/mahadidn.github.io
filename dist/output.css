@@ -684,18 +684,6 @@ video {
   z-index: 9999;
 }
 
-.col-start-2 {
-  grid-column-start: 2;
-}
-
-.col-start-4 {
-  grid-column-start: 4;
-}
-
-.row-start-2 {
-  grid-row-start: 2;
-}
-
 .m-1 {
   margin: 0.25rem;
 }
@@ -1073,6 +1061,10 @@ video {
 
 .bg-\[url\(\'\/dist\/img\/grid\/ryo\.jpeg\'\)\] {
   background-image: url('/dist/img/grid/ryo.jpeg');
+}
+
+.bg-\[url\(\'\/dist\/img\/grid\/me5\.jpeg\'\)\] {
+  background-image: url('/dist/img/grid/me5.jpeg');
 }
 
 .to-slate-100 {
@@ -1500,16 +1492,12 @@ video {
     grid-column-start: 4;
   }
 
-  .md\:col-start-1 {
-    grid-column-start: 1;
+  .md\:row-start-1 {
+    grid-row-start: 1;
   }
 
   .md\:row-start-2 {
     grid-row-start: 2;
-  }
-
-  .md\:row-start-1 {
-    grid-row-start: 1;
   }
 
   .md\:mx-auto {
