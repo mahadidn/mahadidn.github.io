@@ -1055,16 +1055,12 @@ video {
   background-image: url('/dist/img/grid/me3.jpeg');
 }
 
-.bg-\[url\(\'\/dist\/img\/grid\/me4\.jpeg\'\)\] {
-  background-image: url('/dist/img/grid/me4.jpeg');
+.bg-\[url\(\'\/dist\/img\/grid\/me5\.jpeg\'\)\] {
+  background-image: url('/dist/img/grid/me5.jpeg');
 }
 
 .bg-\[url\(\'\/dist\/img\/grid\/ryo\.jpeg\'\)\] {
   background-image: url('/dist/img/grid/ryo.jpeg');
-}
-
-.bg-\[url\(\'\/dist\/img\/grid\/me5\.jpeg\'\)\] {
-  background-image: url('/dist/img/grid/me5.jpeg');
 }
 
 .to-slate-100 {
