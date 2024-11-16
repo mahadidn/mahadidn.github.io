@@ -1023,6 +1023,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\/dist\/img\/grid\/echidna\.jpeg\'\)\] {
+  background-image: url('/dist/img/grid/echidna.jpeg');
+}
+
 .bg-\[url\(\'\/dist\/img\/grid\/frieren2\.jpeg\'\)\] {
   background-image: url('/dist/img/grid/frieren2.jpeg');
 }
@@ -1033,10 +1037,6 @@ video {
 
 .bg-\[url\(\'\/dist\/img\/grid\/furina2\.jpeg\'\)\] {
   background-image: url('/dist/img/grid/furina2.jpeg');
-}
-
-.bg-\[url\(\'\/dist\/img\/grid\/furina3\.jpeg\'\)\] {
-  background-image: url('/dist/img/grid/furina3.jpeg');
 }
 
 .bg-\[url\(\'\/dist\/img\/grid\/marin\.jpeg\'\)\] {
