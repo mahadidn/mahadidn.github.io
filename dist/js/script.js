@@ -4,6 +4,11 @@ const navMenu = document.querySelector('#nav-menu');
 const navLinks = document.querySelectorAll('#nav-menu a'); // Ambil semua link di dalam navMenu
 const toTop = document.querySelector('#to-top');
 const formButton = document.querySelector('#button-form');
+const anonCheckbox = document.querySelector('#anon');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const nameLabel = document.querySelector('#name-w');
+const emailLabel = document.querySelector('#email-w');
 
 // navbar fixed
 window.onscroll = () => {
@@ -67,6 +72,25 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 } else {
     darkToggle.checked = false;
 }
+
+anonCheckbox.addEventListener('change', (e) => {
+
+    if(e.target.checked){
+        nameInput.closest('.w-full').style.display = 'none';
+        emailInput.closest('.w-full').style.display = 'none';
+        nameLabel.closest('.w-full').style.display = 'none';
+        emailLabel.closest('.w-full').style.display = 'none';
+
+        nameInput.value = '';
+        emailInput.value = '';
+    }else {
+        nameInput.closest('.w-full').style.display = 'block';
+        emailInput.closest('.w-full').style.display = 'block';
+        nameLabel.closest('.w-full').style.display = 'block';
+        emailLabel.closest('.w-full').style.display = 'block';
+    }
+
+});
 
 formButton.addEventListener('click', async (e) => {
     e.preventDefault();
