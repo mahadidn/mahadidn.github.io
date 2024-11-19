@@ -120,7 +120,7 @@ formButton.addEventListener('click', async (e) => {
         formButton.disabled = true;
         formButton.textContent = "Loading...";
 
-        const result = await fetch('https://mdnstore.vercel.app/api/send/data', {
+        const result = await fetch('https://mahadidn.vercel.app/api/send/data', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
