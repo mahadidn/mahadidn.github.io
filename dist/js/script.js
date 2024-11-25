@@ -148,3 +148,100 @@ formButton.addEventListener('click', async (e) => {
     
 
 });
+
+
+// pagination blog
+// Simulated blog data
+    const blogPosts = [
+        { title: "Distributed System", slug: "distributed-system", image: "dist/img/blog/sister.png", description: "How to build a distributed system and ensure accurate and real-time database across multiple servers." },
+        { title: "OAuth2 Laravel", slug: "oauth2-laravel", image: "dist/img/blog/Laravel.png", description: "What is OAuth2, and how is it implemented in Laravel 11 using Laravel Passport?" },
+        { title: "Linear Regression", slug: "linear-regression", image: "dist/img/blog/ml.png", description: "Implementation of Simple Linear Regression to Predict Drug Sales at Pharmacies." },
+        { title: "Support Vector Machine", slug: "support-vector-machine", image: "dist/img/blog/svm.png", description: "Implementation of Support Vector Regression for forecasting." },
+    ];
+
+    const postsPerPage = 3;
+    let currentPage = 1;
+
+    // Function to render posts
+    function renderPosts(page) {
+        const start = (page - 1) * postsPerPage;
+        const end = start + postsPerPage;
+        const postsToDisplay = blogPosts.slice(start, end);
+
+        const blogContainer = document.getElementById("blog-posts");
+        blogContainer.innerHTML = postsToDisplay
+            .map(
+                (post) => `
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-700">
+                    <img src="${post.image}" alt="${post.title}" class="p-3 w-full rounded-lg">
+                    <div class="py-8 px-6">
+                        <h3>
+                            <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">${post.title}</a>
+                        </h3>
+                        <p class="font-medium text-base text-secondary mb-6">${post.description}</p>
+                        <a href="/blog/index.html?title=${post.slug}" class="font-medium text-sm text-white bg-primary py-3 px-6 rounded-full hover:opacity-80">Read More</a>
+                    </div>
+                </div>
+            </div>
+        `
+            )
+            .join("");
+    }
+
+    // Function to render pagination
+    function renderPagination() {
+        const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+        const paginationContainer = document.getElementById("pagination").querySelector("ul");
+        paginationContainer.innerHTML = "";
+
+        // Previous button
+        paginationContainer.innerHTML += `
+            <li>
+                <a href="#blog" onclick="changePage(${currentPage - 1})" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                    <span class="sr-only">Previous</span>
+                    <svg class="w-3 h-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                </a>
+            </li>
+        `;
+
+        // Page numbers
+        for (let i = 1; i <= totalPages; i++) {
+            paginationContainer.innerHTML += `
+                <li>
+                    <a href="#blog" onclick="changePage(${i})" class="flex items-center justify-center px-4 h-10 leading-tight ${
+                        i === currentPage
+                            ? "text-blue-600 border border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
+                            : "text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    }">${i}</a>
+                </li>
+            `;
+        }
+
+        // Next button
+        paginationContainer.innerHTML += `
+            <li>
+                <a href="#blog" onclick="changePage(${currentPage + 1})" class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                    <span class="sr-only">Next</span>
+                    <svg class="w-3 h-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                </a>
+            </li>
+        `;
+    }
+
+    // Function to change page
+    function changePage(page) {
+        const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+        if (page < 1 || page > totalPages) return;
+        currentPage = page;
+        renderPosts(currentPage);
+        renderPagination();
+    }
+
+    // Initial render
+    renderPosts(currentPage);
+    renderPagination();
